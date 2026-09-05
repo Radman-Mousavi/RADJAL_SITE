@@ -1,40 +1,1526 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PaperVault | کتابخانه مقالات</title>
+    <!-- =========================
+         BASIC SEO
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+    <title>RADJAL | کتابخانه مقالات علمی و هوش مصنوعی</title>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+    <meta name="description"
+          content="RADJAL؛ کتابخانه‌ای از مقالات علمی مهم در زمینه هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.">
 
-body{
-    font-family:'Vazirmatn',sans-serif;
-    background:#080b16;
-    color:#fff;
-    min-height:100vh;
-}
+    <meta name="robots" content="index, follow">
 
-/* HEADER */
+    <meta name="author" content="RADJAL">
 
-header{
-    padding:55px 8% 35px;
-    background:
-        radial-gradient(circle at 20% 20%,#4327a855,transparent 35%),
-        radial-gradient(circle at 80% 10%,#00c6ff33,transparent 35%);
-}
+    <link rel="canonical"
+          href="https://dj200000.github.io/RADJAL_SITE/">
 
-.logo{
-    font-size:30px;
-    font-weight:800;
-}
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+          content="RADJAL | کتابخانه مقالات علمی">
+
+    <meta property="og:description"
+          content="مجموعه‌ای از مقالات مهم و تأثیرگذار در هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.">
+
+    <meta property="og:url"
+          content="https://dj200000.github.io/RADJAL_SITE/">
+
+    <meta property="og:site_name"
+          content="RADJAL">
+
+    <meta property="og:locale"
+          content="fa_IR">
+
+
+    <!-- =========================
+         THEME
+    ========================== -->
+
+    <meta name="theme-color" content="#080b16">
+
+
+    <!-- =========================
+         FONT
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =========================
+         STRUCTURED DATA
+    ========================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RADJAL",
+        "alternateName": "RADJAL PaperVault",
+        "url": "https://dj200000.github.io/RADJAL_SITE/",
+        "description": "کتابخانه مقالات علمی در زمینه هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.",
+        "inLanguage": "fa"
+    }
+    </script>
+
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Vazirmatn", sans-serif;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(113, 87, 255, 0.12),
+                    transparent 35%
+                ),
+                #070a13;
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        button,
+        input {
+            font-family: inherit;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: relative;
+            overflow: hidden;
+
+            padding:
+                28px
+                clamp(20px, 8vw, 110px)
+                70px;
+
+            border-bottom: 1px solid #20263d;
+
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(113, 87, 255, 0.20),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(0, 198, 255, 0.12),
+                    transparent 35%
+                );
+        }
+
+
+        /* =========================
+           NAV
+        ========================== */
+
+        nav {
+            max-width: 1250px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #7c5cff;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #aeb5cc;
+
+            border: 1px solid #282f49;
+            background: rgba(15, 20, 37, 0.8);
+
+            padding: 8px 15px;
+            border-radius: 12px;
+
+            transition: 0.2s;
+        }
+
+        .nav-link:hover {
+            color: white;
+            border-color: #7157ff;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            max-width: 1250px;
+            margin: 75px auto 0;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 7px 13px;
+
+            border-radius: 30px;
+
+            background: rgba(113, 87, 255, 0.12);
+            border: 1px solid rgba(113, 87, 255, 0.3);
+
+            color: #aaa0ff;
+
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+
+            font-size: clamp(42px, 7vw, 78px);
+
+            line-height: 1.15;
+
+            letter-spacing: -2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #a69eff,
+                    #62d9ff
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero p {
+            max-width: 760px;
+
+            margin-top: 22px;
+
+            color: #aab1c7;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           SEARCH
+        ========================== */
+
+        .search-wrapper {
+            max-width: 720px;
+
+            margin-top: 30px;
+
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box {
+            flex: 1;
+
+            display: flex;
+            align-items: center;
+
+            background: #111629;
+
+            border: 1px solid #292f49;
+
+            border-radius: 15px;
+
+            padding: 0 16px;
+
+            transition: 0.2s;
+        }
+
+        .search-box:focus-within {
+            border-color: #7157ff;
+            box-shadow: 0 0 0 4px rgba(113, 87, 255, 0.08);
+        }
+
+        .search-icon {
+            color: #777f9b;
+            margin-left: 8px;
+        }
+
+        #search {
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            padding: 16px 5px;
+
+            font-size: 15px;
+        }
+
+        #search::placeholder {
+            color: #6e7690;
+        }
+
+        .search-button {
+            border: none;
+
+            padding: 0 22px;
+
+            border-radius: 15px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7157ff,
+                    #4c9dff
+                );
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .search-button:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           STATS
+        ========================== */
+
+        .stats {
+            max-width: 1250px;
+            margin: 35px auto 0;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .stat {
+            padding: 9px 15px;
+
+            border-radius: 12px;
+
+            background: rgba(17, 22, 42, 0.7);
+
+            border: 1px solid #252c45;
+
+            color: #aeb5cc;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           CATEGORIES
+        ========================== */
+
+        .categories {
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            padding:
+                28px
+                20px
+                10px;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .category {
+            border: 1px solid #292f48;
+
+            background: #111629;
+
+            color: #aeb5cc;
+
+            padding: 9px 17px;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+            font-size: 14px;
+        }
+
+        .category:hover,
+        .category.active {
+            background: #7157ff;
+            border-color: #7157ff;
+            color: white;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            max-width: 1250px;
+
+            margin: auto;
+
+            padding:
+                25px
+                20px
+                80px;
+        }
+
+        .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .section-heading h2 {
+            font-size: 25px;
+        }
+
+        .section-heading p {
+            color: #777f99;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+
+        /* =========================
+           GRID
+        ========================== */
+
+        .grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(285px, 1fr)
+                );
+
+            gap: 20px;
+        }
+
+
+        /* =========================
+           CARD
+        ========================== */
+
+        article.card {
+            position: relative;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #12172a,
+                    #0d1220
+                );
+
+            border: 1px solid #252c45;
+
+            border-radius: 22px;
+
+            padding: 25px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.25s,
+                border-color 0.25s,
+                box-shadow 0.25s;
+        }
+
+        article.card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #7157ff,
+                    transparent
+                );
+
+            opacity: 0;
+
+            transition: 0.25s;
+        }
+
+        article.card:hover {
+            transform: translateY(-6px);
+
+            border-color: #5550a0;
+
+            box-shadow:
+                0 18px 50px rgba(0,0,0,0.35);
+        }
+
+        article.card:hover::before {
+            opacity: 1;
+        }
+
+
+        /* =========================
+           BADGE
+        ========================== */
+
+        .badge {
+            display: inline-block;
+
+            padding: 5px 11px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(113, 87, 255, 0.12);
+
+            border: 1px solid
+                rgba(113, 87, 255, 0.15);
+
+            color: #a79cff;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           CARD TEXT
+        ========================== */
+
+        .card h3 {
+            margin-top: 17px;
+
+            font-size: 19px;
+
+            line-height: 1.65;
+        }
+
+        .author {
+            margin-top: 7px;
+
+            color: #727b96;
+
+            font-size: 12px;
+        }
+
+        .description {
+            margin:
+                15px
+                0
+                22px;
+
+            color: #aab1c4;
+
+            font-size: 14px;
+
+            line-height: 2;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .buttons {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 9px;
+        }
+
+        .button {
+            width: 100%;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            padding: 11px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .pdf-button {
+            color: white;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7157ff,
+                    #4c9dff
+                );
+        }
+
+        .info-button {
+            color: #c5cbe0;
+
+            background: #171d32;
+
+            border: 1px solid #303957;
+        }
+
+
+        /* =========================
+           NO RESULTS
+        ========================== */
+
+        #noResults {
+            display: none;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            color: #7e879f;
+        }
+
+        #noResults strong {
+            display: block;
+
+            color: #b9c0d5;
+
+            font-size: 18px;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            border-top: 1px solid #20263d;
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            color: #69718a;
+
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #aeb5cc;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding:
+                    22px
+                    18px
+                    55px;
+            }
+
+            nav {
+                align-items: flex-start;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .nav-link {
+                font-size: 12px;
+                padding: 7px 10px;
+            }
+
+            .hero {
+                margin-top: 55px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .search-wrapper {
+                flex-direction: column;
+            }
+
+            .search-button {
+                min-height: 48px;
+            }
+
+            .categories {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            main {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+        }
+
+
+        /* =========================
+           ACCESSIBILITY
+        ========================== */
+
+        :focus-visible {
+            outline:
+                3px solid
+                rgba(113, 87, 255, 0.7);
+
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <nav aria-label="منوی اصلی">
+
+        <div class="logo">
+            RAD<span>JAL</span> 📚
+        </div>
+
+        <a
+            class="nav-link"
+            href="Research.html">
+            PaperVault
+        </a>
+
+    </nav>
+
+
+    <div class="hero">
+
+        <div class="hero-badge">
+            📚 کتابخانه علمی RADJAL
+        </div>
+
+        <h1>
+            مقالات بزرگ<br>
+            دنیای علم
+        </h1>
+
+        <p>
+            مجموعه‌ای از مقالات مهم و تأثیرگذار
+            در زمینه‌های هوش مصنوعی،
+            علوم کامپیوتر، ریاضیات و فیزیک.
+        </p>
+
+
+        <div class="search-wrapper">
+
+            <div class="search-box">
+
+                <span
+                    class="search-icon"
+                    aria-hidden="true">
+                    🔎
+                </span>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="جستجوی مقاله، نویسنده یا موضوع..."
+                    autocomplete="off"
+                    aria-label="جستجوی مقالات">
+
+            </div>
+
+            <button
+                class="search-button"
+                type="button"
+                onclick="focusSearch()">
+                جستجو
+            </button>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                📄 ۸ مقاله
+            </div>
+
+            <div class="stat">
+                🤖 هوش مصنوعی
+            </div>
+
+            <div class="stat">
+                💻 علوم کامپیوتر
+            </div>
+
+            <div class="stat">
+                📐 ریاضیات
+            </div>
+
+            <div class="stat">
+                ⚛️ فیزیک
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     CATEGORIES
+========================== -->
+
+<div
+    class="categories"
+    role="group"
+    aria-label="دسته‌بندی مقالات">
+
+    <button
+        class="category active"
+        data-category="all"
+        type="button">
+        همه
+    </button>
+
+    <button
+        class="category"
+        data-category="ai"
+        type="button">
+        🤖 هوش مصنوعی
+    </button>
+
+    <button
+        class="category"
+        data-category="computer"
+        type="button">
+        💻 علوم کامپیوتر
+    </button>
+
+    <button
+        class="category"
+        data-category="math"
+        type="button">
+        📐 ریاضیات
+    </button>
+
+    <button
+        class="category"
+        data-category="physics"
+        type="button">
+        ⚛️ فیزیک
+    </button>
+
+</div>
+
+
+
+<!-- =========================
+     MAIN
+========================== -->
+
+<main>
+
+    <div class="section-heading">
+
+        <h2>
+            📚 مقالات منتخب
+        </h2>
+
+        <p>
+            مقالاتی که نقش مهمی در توسعه علم و فناوری داشته‌اند.
+        </p>
+
+    </div>
+
+
+    <section
+        class="grid"
+        id="papers"
+        aria-label="فهرست مقالات">
+
+
+        <!-- =========================
+             PAPER 1
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                Attention Is All You Need
+            </h3>
+
+            <div class="author">
+                Ashish Vaswani et al. — 2017
+            </div>
+
+            <p class="description">
+                مقاله‌ای بنیادی که معماری Transformer را معرفی کرد؛
+                معماری‌ای که پایه بسیاری از مدل‌های زبانی و سیستم‌های
+                مدرن هوش مصنوعی است.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1706.03762"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 2
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                Generative Adversarial Nets
+            </h3>
+
+            <div class="author">
+                Ian Goodfellow et al. — 2014
+            </div>
+
+            <p class="description">
+                مقاله‌ای مهم درباره GANها که روشی برای آموزش دو شبکه
+                عصبی در یک فرآیند رقابتی و تولید داده‌های مصنوعی ارائه کرد.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1406.2661"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 3
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                Deep Residual Learning for Image Recognition
+            </h3>
+
+            <div class="author">
+                Kaiming He et al. — 2015
+            </div>
+
+            <p class="description">
+                مقاله معروف ResNet که با معرفی Residual Learning
+                امکان آموزش شبکه‌های عصبی بسیار عمیق‌تر را فراهم کرد.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1512.03385"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 4
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="computer">
+
+            <span class="badge">
+                💻 علوم کامپیوتر
+            </span>
+
+            <h3>
+                MapReduce: Simplified Data Processing
+            </h3>
+
+            <div class="author">
+                Jeffrey Dean &amp; Sanjay Ghemawat — 2004
+            </div>
+
+            <p class="description">
+                معرفی مدل MapReduce برای پردازش حجم بسیار زیاد داده
+                در سیستم‌های توزیع‌شده.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://research.google.com/archive/mapreduce-osdi04.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 5
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                BERT: Pre-training of Deep Bidirectional Transformers
+            </h3>
+
+            <div class="author">
+                Jacob Devlin et al. — 2018
+            </div>
+
+            <p class="description">
+                مقاله‌ای مهم در NLP که رویکرد پیش‌آموزش دوطرفه
+                برای مدل‌های Transformer را معرفی کرد.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1810.04805"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 6
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="math">
+
+            <span class="badge">
+                📐 ریاضیات
+            </span>
+
+            <h3>
+                A Mathematical Theory of Communication
+            </h3>
+
+            <div class="author">
+                Claude Shannon — 1948
+            </div>
+
+            <p class="description">
+                مقاله تاریخی کلود شنون که پایه‌های نظریه اطلاعات
+                و بسیاری از مفاهیم ارتباطات دیجیتال را شکل داد.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 7
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                Adam: A Method for Stochastic Optimization
+            </h3>
+
+            <div class="author">
+                Diederik Kingma &amp; Jimmy Ba — 2014
+            </div>
+
+            <p class="description">
+                مقاله‌ای درباره الگوریتم Adam؛ یکی از روش‌های
+                بسیار شناخته‌شده برای بهینه‌سازی مدل‌های یادگیری عمیق.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1412.6980"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 8
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                ImageNet Classification with Deep CNNs
+            </h3>
+
+            <div class="author">
+                Alex Krizhevsky et al. — 2012
+            </div>
+
+            <p class="description">
+                مقاله AlexNet که یکی از نقاط عطف مهم در رشد
+                شبکه‌های عصبی کانولوشنی و بینایی ماشین محسوب می‌شود.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =========================
+         NO RESULTS
+    ========================== -->
+
+    <div id="noResults">
+
+        <strong>
+            مقاله‌ای پیدا نشد 🔎
+        </strong>
+
+        عبارت دیگری را امتحان کن.
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <p>
+        © 2026
+        <strong>RADJAL</strong>
+        — کتابخانه مقالات علمی
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+    const searchInput =
+        document.getElementById("search");
+
+    const cards =
+        Array.from(
+            document.querySelectorAll(".card")
+        );
+
+    const categories =
+        Array.from(
+            document.querySelectorAll(".category")
+        );
+
+    const noResults =
+        document.getElementById("noResults");
+
+
+    let activeCategory = "all";
+
+
+    /* =========================
+       SEARCH
+    ========================== */
+
+    function searchPapers() {
+
+        const query =
+            searchInput.value
+                .trim()
+                .toLowerCase();
+
+        let visibleCount = 0;
+
+
+        cards.forEach(card => {
+
+            const text =
+                card.innerText.toLowerCase();
+
+            const matchesSearch =
+                text.includes(query);
+
+            const matchesCategory =
+                activeCategory === "all" ||
+                card.dataset.category === activeCategory;
+
+
+            const visible =
+                matchesSearch &&
+                matchesCategory;
+
+
+            card.style.display =
+                visible ? "" : "block";
+
+            if (!visible) {
+                card.style.display = "none";
+            }
+
+            if (visible) {
+                visibleCount++;
+            }
+
+        });
+
+
+        noResults.style.display =
+            visibleCount === 0
+                ? "block"
+                : "none";
+
+    }
+
+
+    /* =========================
+       CATEGORY FILTER
+    ========================== */
+
+    categories.forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                categories.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                activeCategory =
+                    button.dataset.category;
+
+                searchPapers();
+
+            }
+        );
+
+    });
+
+
+    /* =========================
+       SEARCH BUTTON
+    ========================== */
+
+    function focusSearch() {
+
+        searchInput.focus();
+
+        searchInput.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+
+    /* =========================
+       LIVE SEARCH
+    ========================== */
+
+    searchInput.addEventListener(
+        "input",
+        searchPapers
+    );
+
+
+    /* =========================
+       ESC KEY
+    ========================== */
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                event.key === "/" &&
+                document.activeElement !== searchInput
+            ) {
+
+                event.preventDefault();
+
+                searchInput.focus();
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+</html>
 
 .logo span{
     color:#7c5cff;
