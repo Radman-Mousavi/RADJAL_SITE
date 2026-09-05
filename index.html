@@ -1,1073 +1,1523 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta name="description" content="PaperVault؛ کتابخانه‌ای از مقالات علمی معروف جهان با لینک مستقیم PDF، دسته‌بندی‌شده در حوزه‌های هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PaperVault | کتابخانه مقالات</title>
+    <!-- =========================
+         BASIC SEO
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+    <title>RADJAL | کتابخانه مقالات علمی و هوش مصنوعی</title>
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+    <meta name="description"
+          content="RADJAL؛ کتابخانه‌ای از مقالات علمی مهم در زمینه هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.">
 
-body{
-    font-family:'Vazirmatn',sans-serif;
-    background:#080b16;
-    color:#fff;
-    min-height:100vh;
-}
+    <meta name="robots" content="index, follow">
 
-header{
-    padding:55px 8% 35px;
-    background:
-        radial-gradient(circle at 20% 20%,#4327a855,transparent 35%),
-        radial-gradient(circle at 80% 10%,#00c6ff33,transparent 35%);
-}
+    <meta name="author" content="RADJAL">
 
-.logo{
-    font-size:30px;
-    font-weight:800;
-}
+    <link rel="canonical"
+          href="https://dj200000.github.io/RADJAL_SITE/">
 
-.logo span{
-    color:#7c5cff;
-}
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
 
-.hero{
-    margin-top:55px;
-    max-width:850px;
-}
+    <meta property="og:type" content="website">
 
-.hero h1{
-    font-size:clamp(38px,6vw,70px);
-    line-height:1.15;
-    background:linear-gradient(90deg,#fff,#9e9cff,#54d8ff);
-    -webkit-background-clip:text;
-    color:transparent;
-}
+    <meta property="og:title"
+          content="RADJAL | کتابخانه مقالات علمی">
 
-.hero p{
-    margin-top:20px;
-    color:#a8aec4;
-    font-size:17px;
-    line-height:2;
-}
+    <meta property="og:description"
+          content="مجموعه‌ای از مقالات مهم و تأثیرگذار در هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.">
 
-.search{
-    margin-top:30px;
-    display:flex;
-    max-width:650px;
-}
+    <meta property="og:url"
+          content="https://dj200000.github.io/RADJAL_SITE/">
 
-.search input{
-    flex:1;
-    padding:17px 20px;
-    border-radius:14px 0 0 14px;
-    border:none;
-    outline:none;
-    background:#151a2d;
-    color:white;
-    font-family:inherit;
-}
+    <meta property="og:site_name"
+          content="RADJAL">
 
-.search button{
-    padding:0 25px;
-    border:none;
-    border-radius:0 14px 14px 0;
-    background:#7157ff;
-    color:white;
-    font-family:inherit;
-    cursor:pointer;
-}
+    <meta property="og:locale"
+          content="fa_IR">
 
-.categories{
-    padding:25px 8%;
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-}
 
-.category{
-    border:1px solid #252b45;
-    background:#11162a;
-    color:#bfc5dc;
-    padding:9px 18px;
-    border-radius:30px;
-    cursor:pointer;
-    transition:.2s;
-}
+    <!-- =========================
+         THEME
+    ========================== -->
 
-.category:hover,
-.category.active{
-    background:#7157ff;
-    color:white;
-}
+    <meta name="theme-color" content="#080b16">
 
-.container{
-    padding:25px 8% 80px;
-}
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:22px;
-}
+    <!-- =========================
+         FONT
+    ========================== -->
 
-.card{
-    background:linear-gradient(145deg,#12172a,#0e1220);
-    border:1px solid #252b45;
-    border-radius:22px;
-    padding:25px;
-    transition:.3s;
-    position:relative;
-    overflow:hidden;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.card:hover{
-    transform:translateY(-7px);
-    border-color:#7157ff;
-    box-shadow:0 15px 45px #0008;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-.badge{
-    display:inline-block;
-    padding:6px 12px;
-    border-radius:20px;
-    background:#7157ff22;
-    color:#9c8cff;
-    font-size:12px;
-}
 
-.card h2{
-    margin-top:18px;
-    font-size:20px;
-    line-height:1.6;
-}
+    <!-- =========================
+         STRUCTURED DATA
+    ========================== -->
 
-.author{
-    color:#747c98;
-    font-size:13px;
-    margin-top:8px;
-}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RADJAL",
+        "alternateName": "RADJAL PaperVault",
+        "url": "https://dj200000.github.io/RADJAL_SITE/",
+        "description": "کتابخانه مقالات علمی در زمینه هوش مصنوعی، علوم کامپیوتر، ریاضیات و فیزیک.",
+        "inLanguage": "fa"
+    }
+    </script>
 
-.description{
-    color:#aab0c3;
-    line-height:1.9;
-    font-size:14px;
-    margin:15px 0 22px;
-}
 
-.buttons{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
+    <!-- =========================
+         CSS
+    ========================== -->
 
-.pdf,
-.summary-btn{
-    display:block;
-    width:100%;
-    text-align:center;
-    text-decoration:none;
-    border:none;
-    color:white;
-    padding:12px;
-    border-radius:12px;
-    font-family:inherit;
-    font-weight:600;
-    cursor:pointer;
-    transition:.2s;
-}
+    <style>
 
-.pdf{
-    background:linear-gradient(90deg,#7157ff,#4c9dff);
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.summary-btn{
-    background:#171d33;
-    border:1px solid #303957;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-.pdf:hover,
-.summary-btn:hover{
-    transform:scale(1.02);
-}
+        body {
+            font-family: "Vazirmatn", sans-serif;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(113, 87, 255, 0.12),
+                    transparent 35%
+                ),
+                #070a13;
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
 
-.summary{
-    display:none;
-    margin-top:15px;
-    padding:16px;
-    background:#0a0f20;
-    border:1px solid #303957;
-    border-radius:14px;
-    color:#c8cee0;
-    line-height:2;
-    font-size:14px;
-}
+        a {
+            color: inherit;
+        }
 
-.summary.show{
-    display:block;
-}
+        button,
+        input {
+            font-family: inherit;
+        }
 
-footer{
-    border-top:1px solid #20263d;
-    text-align:center;
-    padding:30px;
-    color:#686f88;
-    font-size:13px;
-}
 
-/* PASSWORD MODAL */
+        /* =========================
+           HEADER
+        ========================== */
 
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:#000b;
-    backdrop-filter:blur(8px);
-    z-index:9999;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-}
+        header {
+            position: relative;
+            overflow: hidden;
 
-.modal.show{
-    display:flex;
-}
+            padding:
+                28px
+                clamp(20px, 8vw, 110px)
+                70px;
 
-.modal-box{
-    width:100%;
-    max-width:400px;
-    background:linear-gradient(145deg,#151b30,#0d1222);
-    border:1px solid #343d61;
-    border-radius:22px;
-    padding:30px;
-    text-align:center;
-    box-shadow:0 20px 70px #000b;
-}
+            border-bottom: 1px solid #20263d;
 
-.modal-box h3{
-    font-size:22px;
-    margin-bottom:10px;
-}
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(113, 87, 255, 0.20),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(0, 198, 255, 0.12),
+                    transparent 35%
+                );
+        }
 
-.modal-box p{
-    color:#8e96b0;
-    font-size:13px;
-    margin-bottom:20px;
-}
 
-.password-input{
-    width:100%;
-    padding:14px;
-    border-radius:12px;
-    border:1px solid #303957;
-    background:#090e1c;
-    color:white;
-    outline:none;
-    font-family:inherit;
-    text-align:center;
-    margin-bottom:12px;
-}
+        /* =========================
+           NAV
+        ========================== */
 
-.password-input:focus{
-    border-color:#7157ff;
-}
+        nav {
+            max-width: 1250px;
+            margin: auto;
 
-.unlock{
-    width:100%;
-    padding:13px;
-    border:none;
-    border-radius:12px;
-    background:linear-gradient(90deg,#7157ff,#4c9dff);
-    color:white;
-    font-family:inherit;
-    font-weight:700;
-    cursor:pointer;
-}
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-.cancel{
-    margin-top:10px;
-    width:100%;
-    padding:11px;
-    border:none;
-    background:transparent;
-    color:#858da8;
-    font-family:inherit;
-    cursor:pointer;
-}
+            gap: 20px;
+        }
 
-.error{
-    color:#ff6b8a;
-    font-size:13px;
-    margin-top:12px;
-    display:none;
-}
-</style>
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #7c5cff;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #aeb5cc;
+
+            border: 1px solid #282f49;
+            background: rgba(15, 20, 37, 0.8);
+
+            padding: 8px 15px;
+            border-radius: 12px;
+
+            transition: 0.2s;
+        }
+
+        .nav-link:hover {
+            color: white;
+            border-color: #7157ff;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            max-width: 1250px;
+            margin: 75px auto 0;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 7px 13px;
+
+            border-radius: 30px;
+
+            background: rgba(113, 87, 255, 0.12);
+            border: 1px solid rgba(113, 87, 255, 0.3);
+
+            color: #aaa0ff;
+
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+
+            font-size: clamp(42px, 7vw, 78px);
+
+            line-height: 1.15;
+
+            letter-spacing: -2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #a69eff,
+                    #62d9ff
+                );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+        .hero p {
+            max-width: 760px;
+
+            margin-top: 22px;
+
+            color: #aab1c7;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           SEARCH
+        ========================== */
+
+        .search-wrapper {
+            max-width: 720px;
+
+            margin-top: 30px;
+
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box {
+            flex: 1;
+
+            display: flex;
+            align-items: center;
+
+            background: #111629;
+
+            border: 1px solid #292f49;
+
+            border-radius: 15px;
+
+            padding: 0 16px;
+
+            transition: 0.2s;
+        }
+
+        .search-box:focus-within {
+            border-color: #7157ff;
+            box-shadow: 0 0 0 4px rgba(113, 87, 255, 0.08);
+        }
+
+        .search-icon {
+            color: #777f9b;
+            margin-left: 8px;
+        }
+
+        #search {
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            background: transparent;
+
+            color: white;
+
+            padding: 16px 5px;
+
+            font-size: 15px;
+        }
+
+        #search::placeholder {
+            color: #6e7690;
+        }
+
+        .search-button {
+            border: none;
+
+            padding: 0 22px;
+
+            border-radius: 15px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7157ff,
+                    #4c9dff
+                );
+
+            cursor: pointer;
+
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .search-button:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           STATS
+        ========================== */
+
+        .stats {
+            max-width: 1250px;
+            margin: 35px auto 0;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .stat {
+            padding: 9px 15px;
+
+            border-radius: 12px;
+
+            background: rgba(17, 22, 42, 0.7);
+
+            border: 1px solid #252c45;
+
+            color: #aeb5cc;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           CATEGORIES
+        ========================== */
+
+        .categories {
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            padding:
+                28px
+                20px
+                10px;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .category {
+            border: 1px solid #292f48;
+
+            background: #111629;
+
+            color: #aeb5cc;
+
+            padding: 9px 17px;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+            font-size: 14px;
+        }
+
+        .category:hover,
+        .category.active {
+            background: #7157ff;
+            border-color: #7157ff;
+            color: white;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            max-width: 1250px;
+
+            margin: auto;
+
+            padding:
+                25px
+                20px
+                80px;
+        }
+
+        .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .section-heading h2 {
+            font-size: 25px;
+        }
+
+        .section-heading p {
+            color: #777f99;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+
+        /* =========================
+           GRID
+        ========================== */
+
+        .grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(285px, 1fr)
+                );
+
+            gap: 20px;
+        }
+
+
+        /* =========================
+           CARD
+        ========================== */
+
+        article.card {
+            position: relative;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #12172a,
+                    #0d1220
+                );
+
+            border: 1px solid #252c45;
+
+            border-radius: 22px;
+
+            padding: 25px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.25s,
+                border-color 0.25s,
+                box-shadow 0.25s;
+        }
+
+        article.card::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #7157ff,
+                    transparent
+                );
+
+            opacity: 0;
+
+            transition: 0.25s;
+        }
+
+        article.card:hover {
+            transform: translateY(-6px);
+
+            border-color: #5550a0;
+
+            box-shadow:
+                0 18px 50px rgba(0,0,0,0.35);
+        }
+
+        article.card:hover::before {
+            opacity: 1;
+        }
+
+
+        /* =========================
+           BADGE
+        ========================== */
+
+        .badge {
+            display: inline-block;
+
+            padding: 5px 11px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(113, 87, 255, 0.12);
+
+            border: 1px solid
+                rgba(113, 87, 255, 0.15);
+
+            color: #a79cff;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           CARD TEXT
+        ========================== */
+
+        .card h3 {
+            margin-top: 17px;
+
+            font-size: 19px;
+
+            line-height: 1.65;
+        }
+
+        .author {
+            margin-top: 7px;
+
+            color: #727b96;
+
+            font-size: 12px;
+        }
+
+        .description {
+            margin:
+                15px
+                0
+                22px;
+
+            color: #aab1c4;
+
+            font-size: 14px;
+
+            line-height: 2;
+        }
+
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .buttons {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 9px;
+        }
+
+        .button {
+            width: 100%;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            padding: 11px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .pdf-button {
+            color: white;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7157ff,
+                    #4c9dff
+                );
+        }
+
+        .info-button {
+            color: #c5cbe0;
+
+            background: #171d32;
+
+            border: 1px solid #303957;
+        }
+
+
+        /* =========================
+           NO RESULTS
+        ========================== */
+
+        #noResults {
+            display: none;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            color: #7e879f;
+        }
+
+        #noResults strong {
+            display: block;
+
+            color: #b9c0d5;
+
+            font-size: 18px;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            border-top: 1px solid #20263d;
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            color: #69718a;
+
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #aeb5cc;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 650px) {
+
+            header {
+                padding:
+                    22px
+                    18px
+                    55px;
+            }
+
+            nav {
+                align-items: flex-start;
+            }
+
+            .logo {
+                font-size: 23px;
+            }
+
+            .nav-link {
+                font-size: 12px;
+                padding: 7px 10px;
+            }
+
+            .hero {
+                margin-top: 55px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .search-wrapper {
+                flex-direction: column;
+            }
+
+            .search-button {
+                min-height: 48px;
+            }
+
+            .categories {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            main {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+        }
+
+
+        /* =========================
+           ACCESSIBILITY
+        ========================== */
+
+        :focus-visible {
+            outline:
+                3px solid
+                rgba(113, 87, 255, 0.7);
+
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================== -->
+
 <header>
 
-<div class="logo">
-Paper<span>Vault</span> 📚
-</div>
+    <nav aria-label="منوی اصلی">
 
-<div class="hero">
+        <div class="logo">
+            RAD<span>JAL</span> 📚
+        </div>
 
-<h1>مقاله‌های بزرگ<br>دنیای علم</h1>
+        <a
+            class="nav-link"
+            href="Research.html">
+            PaperVault
+        </a>
 
-<p>
-مجموعه‌ای از مقالات معروف و تأثیرگذار در حوزه‌های
-هوش مصنوعی، کامپیوتر، فیزیک و ریاضیات.
-</p>
+    </nav>
 
-<div class="search">
 
-<input
-id="search"
-type="text"
-placeholder="جستجوی مقاله..."
-oninput="searchPapers()">
+    <div class="hero">
 
-<button>جستجو</button>
+        <div class="hero-badge">
+            📚 کتابخانه علمی RADJAL
+        </div>
 
-</div>
-</div>
+        <h1>
+            مقالات بزرگ<br>
+            دنیای علم
+        </h1>
+
+        <p>
+            مجموعه‌ای از مقالات مهم و تأثیرگذار
+            در زمینه‌های هوش مصنوعی،
+            علوم کامپیوتر، ریاضیات و فیزیک.
+        </p>
+
+
+        <div class="search-wrapper">
+
+            <div class="search-box">
+
+                <span
+                    class="search-icon"
+                    aria-hidden="true">
+                    🔎
+                </span>
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="جستجوی مقاله، نویسنده یا موضوع..."
+                    autocomplete="off"
+                    aria-label="جستجوی مقالات">
+
+            </div>
+
+            <button
+                class="search-button"
+                type="button"
+                onclick="focusSearch()">
+                جستجو
+            </button>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                📄 ۸ مقاله
+            </div>
+
+            <div class="stat">
+                🤖 هوش مصنوعی
+            </div>
+
+            <div class="stat">
+                💻 علوم کامپیوتر
+            </div>
+
+            <div class="stat">
+                📐 ریاضیات
+            </div>
+
+            <div class="stat">
+                ⚛️ فیزیک
+            </div>
+
+        </div>
+
+    </div>
 
 </header>
 
 
-<div class="categories">
 
-<div class="category active"
-onclick="filterPapers('all',this)">
-همه
-</div>
+<!-- =========================
+     CATEGORIES
+========================== -->
 
-<div class="category"
-onclick="filterPapers('ai',this)">
-🤖 هوش مصنوعی
-</div>
+<div
+    class="categories"
+    role="group"
+    aria-label="دسته‌بندی مقالات">
 
-<div class="category"
-onclick="filterPapers('computer',this)">
-💻 علوم کامپیوتر
-</div>
+    <button
+        class="category active"
+        data-category="all"
+        type="button">
+        همه
+    </button>
 
-<div class="category"
-onclick="filterPapers('math',this)">
-📐 ریاضیات
-</div>
+    <button
+        class="category"
+        data-category="ai"
+        type="button">
+        🤖 هوش مصنوعی
+    </button>
 
-<div class="category"
-onclick="filterPapers('physics',this)">
-⚛️ فیزیک
-</div>
+    <button
+        class="category"
+        data-category="computer"
+        type="button">
+        💻 علوم کامپیوتر
+    </button>
 
-</div>
+    <button
+        class="category"
+        data-category="math"
+        type="button">
+        📐 ریاضیات
+    </button>
 
-
-<main class="container">
-
-<div class="grid" id="papers">
-
-
-<!-- PAPER 1 -->
-
-<div class="card" data-category="ai">
-
-<span class="badge">🤖 هوش مصنوعی</span>
-
-<h2>Attention Is All You Need</h2>
-
-<div class="author">
-Ashish Vaswani et al. — 2017
-</div>
-
-<p class="description">
-مقاله معروفی که معماری Transformer را معرفی کرد؛
-پایه‌ای برای بسیاری از مدل‌های زبانی مدرن.
-</p>
-
-<div class="buttons">
-
-<a
-class="pdf"
-href="https://arxiv.org/pdf/1706.03762"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
-
-<button
-class="summary-btn"
-onclick="requestSummary('transformer')">
-🔐 مشاهده خلاصه
-</button>
-
-</div>
+    <button
+        class="category"
+        data-category="physics"
+        type="button">
+        ⚛️ فیزیک
+    </button>
 
 </div>
 
 
-<!-- PAPER 2 -->
 
-<div class="card" data-category="ai">
+<!-- =========================
+     MAIN
+========================== -->
 
-<span class="badge">🤖 هوش مصنوعی</span>
+<main>
 
-<h2>Generative Adversarial Nets</h2>
+    <div class="section-heading">
 
-<div class="author">
-Ian Goodfellow et al. — 2014
-</div>
+        <h2>
+            📚 مقالات منتخب
+        </h2>
 
-<p class="description">
-مقاله‌ای بنیادی درباره GANها که روش جدیدی
-برای تولید داده‌های مصنوعی با شبکه‌های عصبی ارائه کرد.
-</p>
+        <p>
+            مقالاتی که نقش مهمی در توسعه علم و فناوری داشته‌اند.
+        </p>
 
-<div class="buttons">
+    </div>
 
-<a
-class="pdf"
-href="https://arxiv.org/pdf/1406.2661"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
 
-<button
-class="summary-btn"
-onclick="requestSummary('gan')">
-🔐 مشاهده خلاصه
-</button>
+    <section
+        class="grid"
+        id="papers"
+        aria-label="فهرست مقالات">
 
-</div>
 
-</div>
+        <!-- =========================
+             PAPER 1
+        ========================== -->
 
+        <article
+            class="card"
+            data-category="ai">
 
-<!-- PAPER 3 -->
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
 
-<div class="card" data-category="ai">
+            <h3>
+                Attention Is All You Need
+            </h3>
 
-<span class="badge">🤖 هوش مصنوعی</span>
+            <div class="author">
+                Ashish Vaswani et al. — 2017
+            </div>
 
-<h2>Deep Residual Learning for Image Recognition</h2>
+            <p class="description">
+                مقاله‌ای بنیادی که معماری Transformer را معرفی کرد؛
+                معماری‌ای که پایه بسیاری از مدل‌های زبانی و سیستم‌های
+                مدرن هوش مصنوعی است.
+            </p>
 
-<div class="author">
-Kaiming He et al. — 2015
-</div>
+            <div class="buttons">
 
-<p class="description">
-مقاله معروف ResNet که با معرفی
-Residual Learning آموزش شبکه‌های عمیق را آسان‌تر کرد.
-</p>
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1706.03762"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
-<div class="buttons">
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
-<a
-class="pdf"
-href="https://arxiv.org/pdf/1512.03385"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+            </div>
 
-<button
-class="summary-btn"
-onclick="requestSummary('resnet')">
-🔐 مشاهده خلاصه
-</button>
+        </article>
 
-</div>
 
-</div>
 
+        <!-- =========================
+             PAPER 2
+        ========================== -->
 
-<!-- PAPER 4 -->
+        <article
+            class="card"
+            data-category="ai">
 
-<div class="card" data-category="computer">
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
 
-<span class="badge">💻 علوم کامپیوتر</span>
+            <h3>
+                Generative Adversarial Nets
+            </h3>
 
-<h2>MapReduce: Simplified Data Processing</h2>
+            <div class="author">
+                Ian Goodfellow et al. — 2014
+            </div>
 
-<div class="author">
-Jeffrey Dean & Sanjay Ghemawat — 2004
-</div>
+            <p class="description">
+                مقاله‌ای مهم درباره GANها که روشی برای آموزش دو شبکه
+                عصبی در یک فرآیند رقابتی و تولید داده‌های مصنوعی ارائه کرد.
+            </p>
 
-<p class="description">
-یک مدل مهم برای پردازش حجم بسیار زیاد داده
-در سیستم‌های توزیع‌شده.
-</p>
+            <div class="buttons">
 
-<div class="buttons">
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1406.2661"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
-<a
-class="pdf"
-href="https://research.google.com/archive/mapreduce-osdi04.pdf"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
-<button
-class="summary-btn"
-onclick="requestSummary('mapreduce')">
-🔐 مشاهده خلاصه
-</button>
+            </div>
 
-</div>
+        </article>
 
-</div>
 
 
-<!-- PAPER 5 -->
+        <!-- =========================
+             PAPER 3
+        ========================== -->
 
-<div class="card" data-category="ai">
+        <article
+            class="card"
+            data-category="ai">
 
-<span class="badge">🤖 هوش مصنوعی</span>
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
 
-<h2>BERT: Pre-training of Deep Bidirectional Transformers</h2>
+            <h3>
+                Deep Residual Learning for Image Recognition
+            </h3>
 
-<div class="author">
-Jacob Devlin et al. — 2018
-</div>
+            <div class="author">
+                Kaiming He et al. — 2015
+            </div>
 
-<p class="description">
-یکی از مقالات مهم NLP که روش
-پیش‌آموزش دوطرفه Transformer را معرفی کرد.
-</p>
+            <p class="description">
+                مقاله معروف ResNet که با معرفی Residual Learning
+                امکان آموزش شبکه‌های عصبی بسیار عمیق‌تر را فراهم کرد.
+            </p>
 
-<div class="buttons">
+            <div class="buttons">
 
-<a
-class="pdf"
-href="https://arxiv.org/pdf/1810.04805"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1512.03385"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
-<button
-class="summary-btn"
-onclick="requestSummary('bert')">
-🔐 مشاهده خلاصه
-</button>
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
-</div>
+            </div>
 
-</div>
+        </article>
 
 
-<!-- PAPER 6 -->
 
-<div class="card" data-category="math">
+        <!-- =========================
+             PAPER 4
+        ========================== -->
 
-<span class="badge">📐 ریاضیات</span>
+        <article
+            class="card"
+            data-category="computer">
 
-<h2>A Mathematical Theory of Communication</h2>
+            <span class="badge">
+                💻 علوم کامپیوتر
+            </span>
 
-<div class="author">
-Claude Shannon — 1948
-</div>
+            <h3>
+                MapReduce: Simplified Data Processing
+            </h3>
 
-<p class="description">
-مقاله تاریخی کلود شنون که پایه‌های نظریه اطلاعات
-و بسیاری از مفاهیم ارتباطات دیجیتال را بنا کرد.
-</p>
+            <div class="author">
+                Jeffrey Dean &amp; Sanjay Ghemawat — 2004
+            </div>
 
-<div class="buttons">
+            <p class="description">
+                معرفی مدل MapReduce برای پردازش حجم بسیار زیاد داده
+                در سیستم‌های توزیع‌شده.
+            </p>
 
-<a
-class="pdf"
-href="https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+            <div class="buttons">
 
-<button
-class="summary-btn"
-onclick="requestSummary('shannon')">
-🔐 مشاهده خلاصه
-</button>
+                <a
+                    class="button pdf-button"
+                    href="https://research.google.com/archive/mapreduce-osdi04.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
-</div>
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
-</div>
+            </div>
 
+        </article>
 
-<!-- PAPER 7 -->
 
-<div class="card" data-category="ai">
 
-<span class="badge">🤖 هوش مصنوعی</span>
+        <!-- =========================
+             PAPER 5
+        ========================== -->
 
-<h2>Adam: A Method for Stochastic Optimization</h2>
+        <article
+            class="card"
+            data-category="ai">
 
-<div class="author">
-Diederik Kingma & Jimmy Ba — 2014
-</div>
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
 
-<p class="description">
-معرفی الگوریتم Adam؛ یکی از محبوب‌ترین
-روش‌های بهینه‌سازی در یادگیری عمیق.
-</p>
+            <h3>
+                BERT: Pre-training of Deep Bidirectional Transformers
+            </h3>
 
-<div class="buttons">
+            <div class="author">
+                Jacob Devlin et al. — 2018
+            </div>
 
-<a
-class="pdf"
-href="https://arxiv.org/pdf/1412.6980"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+            <p class="description">
+                مقاله‌ای مهم در NLP که رویکرد پیش‌آموزش دوطرفه
+                برای مدل‌های Transformer را معرفی کرد.
+            </p>
 
-<button
-class="summary-btn"
-onclick="requestSummary('adam')">
-🔐 مشاهده خلاصه
-</button>
+            <div class="buttons">
 
-</div>
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1810.04805"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
-</div>
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
+            </div>
 
-<!-- PAPER 8 -->
+        </article>
 
-<div class="card" data-category="ai">
 
-<span class="badge">🤖 هوش مصنوعی</span>
 
-<h2>ImageNet Classification with Deep CNNs</h2>
+        <!-- =========================
+             PAPER 6
+        ========================== -->
 
-<div class="author">
-Alex Krizhevsky et al. — 2012
-</div>
+        <article
+            class="card"
+            data-category="math">
 
-<p class="description">
-مقاله معروف AlexNet که نقطه عطفی در
-رشد شبکه‌های عصبی کانولوشنی و Computer Vision بود.
-</p>
+            <span class="badge">
+                📐 ریاضیات
+            </span>
 
-<div class="buttons">
+            <h3>
+                A Mathematical Theory of Communication
+            </h3>
 
-<a
-class="pdf"
-href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
-target="_blank"
-rel="noopener noreferrer">
-📄 مشاهده PDF
-</a>
+            <div class="author">
+                Claude Shannon — 1948
+            </div>
 
-<button
-class="summary-btn"
-onclick="requestSummary('alexnet')">
-🔐 مشاهده خلاصه
-</button>
+            <p class="description">
+                مقاله تاریخی کلود شنون که پایه‌های نظریه اطلاعات
+                و بسیاری از مفاهیم ارتباطات دیجیتال را شکل داد.
+            </p>
 
-</div>
+            <div class="buttons">
 
-</div>
+                <a
+                    class="button pdf-button"
+                    href="https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
 
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
 
-</div>
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 7
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                Adam: A Method for Stochastic Optimization
+            </h3>
+
+            <div class="author">
+                Diederik Kingma &amp; Jimmy Ba — 2014
+            </div>
+
+            <p class="description">
+                مقاله‌ای درباره الگوریتم Adam؛ یکی از روش‌های
+                بسیار شناخته‌شده برای بهینه‌سازی مدل‌های یادگیری عمیق.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://arxiv.org/pdf/1412.6980"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             PAPER 8
+        ========================== -->
+
+        <article
+            class="card"
+            data-category="ai">
+
+            <span class="badge">
+                🤖 هوش مصنوعی
+            </span>
+
+            <h3>
+                ImageNet Classification with Deep CNNs
+            </h3>
+
+            <div class="author">
+                Alex Krizhevsky et al. — 2012
+            </div>
+
+            <p class="description">
+                مقاله AlexNet که یکی از نقاط عطف مهم در رشد
+                شبکه‌های عصبی کانولوشنی و بینایی ماشین محسوب می‌شود.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button pdf-button"
+                    href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    📄 مشاهده PDF
+                </a>
+
+                <a
+                    class="button info-button"
+                    href="Research.html">
+                    📚 اطلاعات بیشتر
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =========================
+         NO RESULTS
+    ========================== -->
+
+    <div id="noResults">
+
+        <strong>
+            مقاله‌ای پیدا نشد 🔎
+        </strong>
+
+        عبارت دیگری را امتحان کن.
+
+    </div>
+
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================== -->
+
 <footer>
-© 2026 Radjal Group - All Rights Reserved
+
+    <p>
+        © 2026
+        <strong>RADJAL</strong>
+        — کتابخانه مقالات علمی
+    </p>
+
 </footer>
 
 
-<!-- PASSWORD WINDOW -->
 
-<div class="modal" id="passwordModal">
-
-<div class="modal-box">
-
-<h3>🔐 خلاصه اختصاصی</h3>
-
-<p>
-برای مشاهده خلاصه این مقاله رمز را وارد کنید.
-</p>
-
-<input
-id="passwordInput"
-class="password-input"
-type="password"
-placeholder="رمز عبور"
-autocomplete="off"
-onkeydown="if(event.key==='Enter') checkPassword()">
-
-<button
-class="unlock"
-onclick="checkPassword()">
-باز کردن خلاصه
-</button>
-
-<button
-class="cancel"
-onclick="closeModal()">
-انصراف
-</button>
-
-<div
-class="error"
-id="passwordError">
-❌ رمز اشتباه است.
-</div>
-
-</div>
-</div>
-
+<!-- =========================
+     JAVASCRIPT
+========================== -->
 
 <script>
 
-/* ==========================================
-   ENCRYPTED SUMMARIES
-   AES-GCM + PBKDF2
-   ========================================== */
+    const searchInput =
+        document.getElementById("search");
 
-const SUMMARY_DATA = {
-
-transformer:{
-iv:"3nAywPOAZgGX1Djx",
-data:"Gf0XVOFx4yLocPaAp2rl5viC3++IvtlR044mjc+ud9cED2he4RBmwSlFVmgxwIwbTnxqamCq7Cu/rqIcO4RRax8yV3blVDXlah++Tyg91FzwVp6pf6YG5rQsYuETiBLGONwdFdRm4AzxRAGsvUwLBULdp/2NDzhy2p60O2QnEPTYHLS0dkg4HbwQfIM1tZIdm6JxtwZ0IapQxXer55TMzOslpp5npAv3NeK9uMgddR+/t3Lb5Z8a+b84+U7V9M1zjaMqIxPtAjAheWsvzY57iZuAKPBBAGRGE0egA/bY5n6a2dwjqMtRc0Ig4Pk7YGaq/vhzjUXkB87Yx54/ICAwb8r8YvDdehUYequGRn6ykk5PHmourfMqES+5inm5050iMOE6XmRpWEDQuR8x7QI/cnMdnCSRuR+cDiNDODvxXFzXmD5i77brbYaGTotglFOyOZaXwCYYwBUMehl0ZijqxTtSR2ATtTKYGSNZ7NyaCk5kQ5gqYwqN6ZZy1EiiRr1h3RtVEvXAJ3oC5pKk7ukL6H6pX+rGfip8d4qwXj8z+XA+NTCHAV9XifGP50F5uv2lM4j0VY0Urk+baXV+aE0O8XGqTAbv7v+1gwKfdQx8UBKUyyABQD+CMDxeuHYUwrfT+orOFqRLz07+t5mElG9yEow1hdiMya34BzTsnLvy2aI3jkN7rHTCVryvLIBgcPMdzR1PFxgTX/SW8oNRkz90SU6wdxmCLo4="
-},
-
-gan:{
-iv:"m3fi9fu+QrokPKqB",
-data:"EL+5Ux7Sf8GheIQ24ptvEClP26BXB7aneG/VHchEsXpnnufRDzK76D+yG7eJz2bdekBSz5n/0Mpzx5MT20UNjYdhv0pgD0NiZUEmIO6qCOjcmbUxGqlpKLD7jqdLWJXLuue7vqUcpcufLJbOES+dWdJMuP6WX22nSjaO8OVhVZIAGDFXOpqFvhly598O3AioYOpYPOwBTVPJgqYgqGRx3Eo+wNL9wkX3r3uApFXRV5O5GGwsQsQ7vigYPMkgHiUjxYafpz5hbD5P5suNhQypdXfjN6m1ARTUuZx8vYvfx3hEiIL7UzCWhB6DvXcXGM9/RyfBCrzZgrh8/cEepcYvFwAoEYapGk1Zz2+3VvkVVqGswOpvZXr/tSlBvLAY3MIPpKotKvDUQk2OlrxUyFyUF+j5266RO1MPGUH0GJJebPiy0UhSoC4Ltc3vbmB/T3tPvjFeQaUjYKiv9Po8/fdQRclCiS5XPevD1GjXgfnYWOiI3n/K27A1MVOIJ+MBg2vSFi1aCSRjdoP6cTTQZh2fAd0WHH+D73L1MlH12y3ZuKjznzfQiitYPazY/ihzbV3/rFNfRND5UaHzLU1UiBTVz5FxhMOmHbYSnYVzR9fb+LbH23tEz4nLJGaIzvLJ8KmHKjBG62JmaXTjyrbwIYU2"
-},
-
-resnet:{
-iv:"w4glg2Az1F9TDaPa",
-data:"O3Ca86h+5Sb5ltqcP9TutYCYOfy/An4VEOecSXYl7aqRgmyThPJ7b+rMqu1D63cdf6KfLj69MQRKQzCWXrkKzwVmIP8fqZWlH5m+qg8VFraxK/tW8w8pql5F23nOOBvqAtcB3qJ+oNSZMHSPhcOuV2EiSJYNco0USBQrxth4+IUl3AAdDAG4K2+jQ9tUV7zXL97UDO0+mL8v5JG9O5Ngsu4s4zS2ZNl7BALyubfZuFKbfFcnlb3UYuG1pqvQs/+74VZFBa91+HlBZs/Sq5eYm6rbxC41iXTEIPxUV3QjGIJGq2Yi9vlIyp818IVQYrTpx4WnxmtNyThpk+5Qj5o41UjO6d/rnaQESsQoBUjL9rMIi+yxXLFKFkjjwBgs/5rg3jXmpx/Xy4FvlAavgaPwSynVhGVKZOgzJRm45p3n1w2H72vXsOrzNsDYG0mRYjZDxhCYoR2vHet0mjhqoAsc1TroNki3wkaNl6rRUd1AWlzg7+S1P0FiaPWl5UjinTig4O95mespb07QZEn16jaI8dwEuJYSSiEfciUkuhD4t8vEa29K+v0uuQwY0qWijKCSMqHtIhZsNit0EDj84cZGPuMU3uKSp8R3wPoYg8+bzaipupq7/AX1MmEZ7zh0WAjHUlVkqfmQPz9sFYRY/Dy5kPz/4eXgkt0lAA=="
-},
-
-mapreduce:{
-iv:"TOpAVJz4HBfHQh00",
-data:"OnQCG2O2Y8Qu7QvXob7/ez+w8FxqUeqBCEIYx8LgpcG288ter7KgdH/nUd20s0T5twVktxGJSXZx+nG+vYlrYsOMvutkW3MHmUdi9Py5kpFOXXZ4Y3epwl6JA5xV0wNKwdo01PUMOtQqW3TxjPQoLvoE9a7QeVn/hWNl5kNUNfAL1C+1ek0bmm5UUEm4gXN4LaeFCoVhpRMrPYb8qSGYL+9iDrC8PVGnH7D8yEveY31vRArTyHKO/R4avfeDqerxF/a8e/tPUlFOkAO5EnqYhSp1IlA2xpi3MuYI1qawpa0JJEqjV4GxnJ49MbjCN8gpJA3EIGBiH0d+nhtHSKcOuBjocmfUz9twyP4wHeGZ2zlJvfoUCnEQ1qdNCXLwlkIuWgVFB+pvmFFwXk9xoHdCnqSr0roIOSgntD9yjvGEs2HsEnyLe2oZlZVpWtGB5x4ge2aZZ9rh4yeLbsLGdg0pH31ejZjLUg1OCmiL+coBzNqM/D6zyt8HW0kimntQOHp9fODmIAz5KLgjIOiTek5wcTiFKWWhv6gqhbdTmzEBySfeoB2rOBB0DthdTpeBlTjeRfmBx0pZctaywYPfpVGAVCPpe1UefEN4NEkLsyP/aDQQ9msRUN5OQa6YJQuEABKv7bnPsz1sNT10Kg3KF3PnElHAbJEhLAnJD1MfugTT/BqvNgDf8D3Wu7tcaBq"
-},
-
-bert:{
-iv:"llzzB/2P5zKdOH39",
-data:"NnI0Jn7EKcJHcezGnNvHow40OK6t7W2a+DlMTaPP9THSJprNAYKYQYjGIY5/idqP9EooqDske3Mwyf8N8rYtIwL0jfmE/g41Pb7/YyZYPf2oL8JNF23+fOB8Xhj1v4I1Vj2htYZcVnDm90f4WNSEEXm5PGw/npnNItXV7wdad/Yv9KXurBb7dzMNVImgae06bNGTHLMlCvZgKB9pEPteLStBxzdEM6dPxdWI+FZQiN5NbYaBHWsiCw6N4X3L5tIlxF9/XIfjF6mQrInBP/nVCko1ncisMGT9HfqBmUe5SnE+/XHIo5J6Do52Zi3/MxbzlN0p1W0JCkNE1/0uCsKVBrNZcGAqx8GGyCy9uBvHVXx3zfie9cZEgtgZgwB46C8XCG/A2qFjRE/oY1QPE39lJN+P6q5E4kZ/DUg8Lw+KMXgcDh1W4C0oZg/asGeQiNsju4Mv2F0LNBov6qrYcKh2Bk+eI8txFwcgsoonPkQ/23GmCUPt5OMNrjKed2BYe5jxaOqGw6yw/n+BV0Ql9/LKeTr075N5b5ZhObpzq11a+Ov2kt/3s82awIMTawBiT1DDTnVfFZvOc3OQCx5+oqHIdw/ig6yS9f4/NBzahUypeYzRVmGljMF1U6a1ZUWY2oyVtiUDytm+7wWfl2Rs8VjqJL6oh0S8pVZQgFjmJ3lDFhQ2"
-},
-
-shannon:{
-iv:"RO3ToFIMekNBqO3B",
-data:"G0Czefq3pSNO13C20PBjw6Jf79Gi7lzcq+AS/++WXLyI8TEvTBtogxCuXen3DRjbtjRZyBRpzH/iMJpRGXDcsmwz9iM0CrKPrC63beNna+f66SjMe6HJloYqCQlol0pCl6REZC8l/kTliXfwhyCo7g9lzXlMpx9BoKatrKg2Q2NIAQb5jVJp6D2X4s6X3V6MH1RrINKeCGKvd8n56zKSu8YCm+p1T/Lf5TfL176jJdRchUMN5oVzgxMn6MdkLOMf7Dz30i2W864xg8/MKOah0gDr2VFAp3JcZZkoB6WI+OL4eyl9ZivXpMVZP+LR0/2iceadVq1XUIt7EwscfFsfhNcEbCobGTpw7Huc/o/hIsNbbQWBNJ7pOWyMu9FM4az1HBBU0erA65tYDEi29NE/DM9ysdcaiJ2mcoYgTgKDWp05a2K9SqOar6Sj4Mc7Q5r5gtesw5Pk023RY90SphIicTFfI+Tt8Y9fOJo5xO8Zj0m1YjRuNpFTsHppw8lHUnMISYNmVLPLfMUN8Fvag4UPKuc9vp1IA+XmpqdBk63ZpW2zuep5aTCEhwr8uFshEJz0MZmgcjKSVcLMPp8Hz6rrhNsWZjdag+kuJ1nO4LtF5J0VsQqoqyIxGMOAaLertSDBi3f7bFx0tSOpD+Jm4hADUtg+M5Sa7ez1wBa1t/NA="
-},
-
-adam:{
-iv:"DJ2jvidMdbCQEPhG",
-data:"lqrgOUeEBs/sONrtXZJIpx6pqXSpndtDueszp3fdBM5+3fS83TIqxDmQiXpUlkCqwjpxO1+OufIZaxH0+7CWqSMnleg4pHIvGXGwYUxcwYEV8Rggvsb9PW1Sc5oO4qkto8b46ikDFLjfCHpmwYZwonyv67n3Q7KigvjiLSwFEKlvzPLJqo6dGsVWie8AFMhJINmwIN8gvUIY+KZtYK/+RNrXO5UKwCqFMCJny80JxfjprkiFDkAdpbF1a698x6X7DuXSz+IkiBCOpMpzINE1zYB/0kv0InLbrpjKKkhhksM35KR5dWvADWEfXY8pbCyVyV7mDwYyiKoJtlVY9kWBmBdoPpdC1AvSClSigFsKCnjyJmq/aMUgtXcmxizJ2aPB1jM/zMOK4ae/4KFvtCKqQ983nqJCr/6GHnTjK0mTsymEio5TOYcOcQDachbnbh7aPrZDnqata7jJLvp/ukw+Q9c9e/8CPJxi6TWzOfl5TKXbxgYsegIiwqEBh9aY+LXwnTyP5rLjh38MorXzuXWAqWCnppd0xznCHTsw6rGzFK2HEiKyfKg9+KYnXao0Obm/ZUByIxLhOclYn3ef5hUEocLDpbOAUktwRlNvUGNWz5uAALuR+fWNgrLORBt8/zOkJiK3TxBOXZ/OZ2zFgjKO8TFCFbaMIwqY5dfYv6uJ3CjxkeBxbkLng5ySSFWyYRotT48O"
-},
-
-alexnet:{
-iv:"rQwR5c0LgWDJPHhF",
-data:"1vglEXF4b7w571QE3GLzD6OEeS8+QIbidtBMbgTeuJswIfTkGE+WZ6O6Tf33SO0dFqThD8JmwqCzfBKG6bc25g98hfi8D1F1gik79Fpl4K05ZfbchttmhCXJI9qZIMp6SISrp9KW7ATjDaVgxI9NpAvhl/yhdPeJjIjSEaXkgKUeUY7X4OdXsL14SGO9eab74WJL4AaZHuM9STAs9SjdLZfXGX8n3oZ//LJo0PWX4I85aRJEhlgtPK+vWTMc5b9XT7aJwzXIrUkyh76MAo2SU0sOx9k9deh7jrn7fRY2JzNYzxzgBzZtKBUInRXUyptB2e4PnVriNt5HiLfXBnii9Cn2CMbMkYkuwRFUswaaMjFtF9aw/idrgTNtxNjY5QxI2xFTswW/YQN0q2IAbcsuV6kaCGh36JT5t/DejjybVyisbydXiVvfU3qd6sQn7iVe0Mr3UfE+4SuJt6+z/CwcDwHRRLoPHzN1mDvwkmsEpoEqIyO0o+h6k4nszTuswGqVe2JFuHHwDSo6U7HxlgqyJGWBP1KSU1hC4ww7y9Bm1dI2UuP82F3ugertRE9eVE2pk5mh72S5lK+g5OT92M0PF/w="
-}
-
-};
-
-const SALT =
-"cXwY2vsBXTDcZia5TBmIBg==";
-
-let selectedSummary = null;
-
-
-/* Base64 → Bytes */
-
-function base64ToBytes(base64){
-
-    const binary = atob(base64);
-
-    const bytes =
-        new Uint8Array(binary.length);
-
-    for(let i=0;i<binary.length;i++){
-        bytes[i] =
-            binary.charCodeAt(i);
-    }
-
-    return bytes;
-}
-
-
-/* ساخت کلید */
-
-async function deriveKey(password){
-
-    const encoder =
-        new TextEncoder();
-
-    const keyMaterial =
-        await crypto.subtle.importKey(
-            "raw",
-            encoder.encode(password),
-            "PBKDF2",
-            false,
-            ["deriveKey"]
+    const cards =
+        Array.from(
+            document.querySelectorAll(".card")
         );
 
-    return crypto.subtle.deriveKey(
-        {
-            name:"PBKDF2",
-            salt:base64ToBytes(SALT),
-            iterations:200000,
-            hash:"SHA-256"
-        },
-        keyMaterial,
-        {
-            name:"AES-GCM",
-            length:256
-        },
-        false,
-        ["decrypt"]
-    );
-
-}
-
-
-/* رمزگشایی */
-
-async function decryptSummary(password,id){
-
-    const item =
-        SUMMARY_DATA[id];
-
-    const key =
-        await deriveKey(password);
-
-    const decrypted =
-        await crypto.subtle.decrypt(
-            {
-                name:"AES-GCM",
-                iv:base64ToBytes(item.iv)
-            },
-            key,
-            base64ToBytes(item.data)
+    const categories =
+        Array.from(
+            document.querySelectorAll(".category")
         );
 
-    return new TextDecoder()
-        .decode(decrypted);
+    const noResults =
+        document.getElementById("noResults");
 
-}
 
+    let activeCategory = "all";
 
-/* درخواست رمز */
 
-function requestSummary(id){
+    /* =========================
+       SEARCH
+    ========================== */
 
-    selectedSummary = id;
+    function searchPapers() {
 
-    document
-        .getElementById("passwordModal")
-        .classList.add("show");
+        const query =
+            searchInput.value
+                .trim()
+                .toLowerCase();
 
-    document
-        .getElementById("passwordInput")
-        .value = "";
+        let visibleCount = 0;
 
-    document
-        .getElementById("passwordError")
-        .style.display = "none";
 
-    setTimeout(()=>{
-        document
-            .getElementById("passwordInput")
-            .focus();
-    },100);
-
-}
-
-
-/* بررسی رمز */
-
-async function checkPassword(){
-
-    const input =
-        document
-        .getElementById("passwordInput")
-        .value;
-
-    try{
-
-        const text =
-            await decryptSummary(
-                input,
-                selectedSummary
-            );
-
-        closeModal();
-
-        showSummary(
-            selectedSummary,
-            text
-        );
-
-    }catch(error){
-
-        document
-            .getElementById("passwordError")
-            .style.display = "block";
-
-    }
-
-}
-
-
-/* نمایش خلاصه فقط پس از رمزگشایی */
-
-function showSummary(id,text){
-
-    let box =
-        document.getElementById(
-            "summary-" + id
-        );
-
-    if(!box){
-
-        box =
-            document.createElement("div");
-
-        box.id =
-            "summary-" + id;
-
-        box.className =
-            "summary";
-
-        const button =
-            document.querySelector(
-                `[onclick="requestSummary('${id}')"]`
-            );
-
-        button
-            .parentElement
-            .appendChild(box);
-
-    }
-
-    box.textContent = text;
-
-    box.classList.add("show");
-
-    box.scrollIntoView({
-        behavior:"smooth",
-        block:"center"
-    });
-
-}
-
-
-/* بستن پنجره */
-
-function closeModal(){
-
-    document
-        .getElementById("passwordModal")
-        .classList.remove("show");
-
-}
-
-
-/* کلیک بیرون پنجره */
-
-document
-.getElementById("passwordModal")
-.addEventListener(
-    "click",
-    function(e){
-
-        if(e.target === this){
-            closeModal();
-        }
-
-    }
-);
-
-
-/* =========================
-   CATEGORY FILTER
-========================= */
-
-function filterPapers(category,element){
-
-    document
-        .querySelectorAll('.category')
-        .forEach(x =>
-            x.classList.remove('active')
-        );
-
-    element.classList.add('active');
-
-    document
-        .querySelectorAll('.card')
-        .forEach(card=>{
-
-            if(
-                category === 'all' ||
-                card.dataset.category === category
-            ){
-
-                card.style.display='block';
-
-            }else{
-
-                card.style.display='none';
-
-            }
-
-        });
-
-}
-
-
-/* =========================
-   SEARCH
-========================= */
-
-function searchPapers(){
-
-    const query =
-        document
-        .getElementById('search')
-        .value
-        .toLowerCase();
-
-    document
-        .querySelectorAll('.card')
-        .forEach(card=>{
+        cards.forEach(card => {
 
             const text =
                 card.innerText.toLowerCase();
 
+            const matchesSearch =
+                text.includes(query);
+
+            const matchesCategory =
+                activeCategory === "all" ||
+                card.dataset.category === activeCategory;
+
+
+            const visible =
+                matchesSearch &&
+                matchesCategory;
+
+
             card.style.display =
-                text.includes(query)
-                ? 'block'
-                : 'none';
+                visible ? "" : "block";
+
+            if (!visible) {
+                card.style.display = "none";
+            }
+
+            if (visible) {
+                visibleCount++;
+            }
 
         });
 
-}
+
+        noResults.style.display =
+            visibleCount === 0
+                ? "block"
+                : "none";
+
+    }
+
+
+    /* =========================
+       CATEGORY FILTER
+    ========================== */
+
+    categories.forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                categories.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                button.classList.add("active");
+
+                activeCategory =
+                    button.dataset.category;
+
+                searchPapers();
+
+            }
+        );
+
+    });
+
+
+    /* =========================
+       SEARCH BUTTON
+    ========================== */
+
+    function focusSearch() {
+
+        searchInput.focus();
+
+        searchInput.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+
+    /* =========================
+       LIVE SEARCH
+    ========================== */
+
+    searchInput.addEventListener(
+        "input",
+        searchPapers
+    );
+
+
+    /* =========================
+       ESC KEY
+    ========================== */
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                event.key === "/" &&
+                document.activeElement !== searchInput
+            ) {
+
+                event.preventDefault();
+
+                searchInput.focus();
+
+            }
+
+        }
+    );
 
 </script>
 
+
 </body>
-</html>                        
+    </html>                 
